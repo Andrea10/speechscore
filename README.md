@@ -79,7 +79,15 @@ The script measures *how* you speak. To improve *what* you say (structure, conci
 - [`coach/INSTRUCTIONS.md`](coach/INSTRUCTIONS.md): paste into a Claude Project's custom instructions. You then dictate an answer in the Claude app and get back a diagnosis, a rewrite, reusable patterns and a drill. Say "drill me" for a practice prompt.
 - [`coach/PLAYBOOK.md`](coach/PLAYBOOK.md): the reference the coach uses. It covers answer structures (PREP, What/So what/Now what, SCQA, STAR+L), sentence patterns, a phrase bank and Italian-to-English traps. Upload it to the Project's knowledge.
 
-Suggested split: coach daily on your phone (10 minutes, anywhere), and score with the script weekly.
+- [`coach/LISTENER_RATING.md`](coach/LISTENER_RATING.md): the outcome measure. Once a month, three listeners rate a 2-minute recording on the competence items of McCroskey & Teven's (1999) source credibility scale.
+
+The coach scores each answer on competencies adapted from the Public Speaking Competence Rubric (Schreiber, Paul & Shibley, 2012). It adds one extra score, for sounding natural, aimed at non-native speakers.
+
+| Level | What | Tool | How often |
+|---|---|---|---|
+| Inputs | Fluency (pauses, pace, fillers) | `speechscore.py` | Weekly |
+| Inputs | Structure, language, close | Speech Coach Project | Daily |
+| Outcome | Perceived competence | Listener rating | Monthly |
 
 ## Limits
 
