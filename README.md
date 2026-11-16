@@ -72,6 +72,15 @@ So the main point is that we should, [/0.6s] prioritise [‖0.8s] the settlement
 3. Paste the prompt from the report into an LLM to get feedback on structure and conciseness.
 4. Pick **one** metric to improve the following week. Watch the trend in `speech_log.csv`.
 
+## Coaching on your phone
+
+The script measures *how* you speak. To improve *what* you say (structure, concision, sounding natural), use the coach in [`coach/`](coach/):
+
+- [`coach/INSTRUCTIONS.md`](coach/INSTRUCTIONS.md): paste into a Claude Project's custom instructions. You then dictate an answer in the Claude app and get back a diagnosis, a rewrite, reusable patterns and a drill. Say "drill me" for a practice prompt.
+- [`coach/PLAYBOOK.md`](coach/PLAYBOOK.md): the reference the coach uses. It covers answer structures (PREP, What/So what/Now what, SCQA, STAR+L), sentence patterns, a phrase bank and Italian-to-English traps. Upload it to the Project's knowledge.
+
+Suggested split: coach daily on your phone (10 minutes, anywhere), and score with the script weekly.
+
 ## Limits
 
 - **Filler counts are a floor.** Whisper tends to clean up disfluencies. The script prompts it to transcribe verbatim, which helps but does not fix it completely.
